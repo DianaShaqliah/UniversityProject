@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>صفحة تسجيل الطالب</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+
+    <script type="text/javascript" src="../assets/js/jquery.js"></script>
+    <script type="text/javascript" src="../assets/js/popper.js"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+
+</head>
+
+<body style="background-image: linear-gradient(to bottom, #051937, #061d3e, #062146, #07254d, #072955);">
+    <div class="d-flex" id="wrapper">
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">جامعة الأزهر</div>
+            <div class="list-group list-group-flush">
+                <a href="../indexx.html"class="list-group-item list-group-item-action bg-light">الرئيسية</a>
+               
+            </div>
+        </div>
+        <div class="container" style="margin: 0;margin-top: 15rem;">
+            <h1 ыы class="text p-3  text-white text-center" style="transform: translateY(-70px)">صفحة تسجيل الطالب</h1>
+            <form class="form-group" action="add-student.php" method="GET">
+                <div class="form-group row">
+                    <label for="colFormLabel" class="col-sm-2 col-form-labe1 text-white">اسم الطالب</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="student_name" placeholder="اسم الطالب" required/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="colFormLabel" class="col-sm-2 col-form-labe1 text-white">رقم الطالب</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="student_id" placeholder="رقم الطالب" required />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="colFormLabe3" class="col-sm-2 col-form-label text-white">اسم المشروع</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="colFormLabe3" name="major"
+                            placeholder="اسم المشروع" required />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="colFormLabe4" class="col-sm-2 col-form-label text-white">نوع المشروع</label>
+                    <div class="col-sm-10">
+                        <select id="inputState" class="form-control" required>
+                            <option disabled selected>نوع المشروع</option>
+                            <option>تطبيق جوال</option>
+                            <option>ويب</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <label for="colFormLabe3" class="col-sm-2 col-form-label text-white">اسم المشرف</label>
+                    <div class="col-sm-10">
+                        <select id="inputState" class="form-control" required>
+                            <option disabled selected>اسم المشرف</option>
+                            <option>معمر اليازجي</option>
+                            <option> عادل أحمد</option>
+                        </select>
+                    </div>
+
+                </div>
+                <button name="submit" type="submit" class="btn btn-primary text-right text-white">
+                    تسجيل
+                </button>
+                <button type="reset" class="btn btn-primary text-right text-white">
+       تفريغ
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
